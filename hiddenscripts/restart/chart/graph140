@@ -1,0 +1,13 @@
+#!/usr/bin/gnuplot
+reset
+set terminal png size 1500,500 enhanced background rgb 'gray' font "default,16"
+set output "/var/www/html/graphs/nbplayers140.png"
+
+set xlabel "time"
+set xdata time
+set timefmt "%H:%M:%S"
+set ylabel "Number of players"
+
+set title "Number of players on serv 140"
+set samples 1000
+plot "nicedata140" using 1:2 w lines ls 1 lt rgb "#FC0101" notitle
