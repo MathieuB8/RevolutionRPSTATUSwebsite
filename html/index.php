@@ -453,7 +453,7 @@ echo "Server 1 (30120)<br>";
 ?>
 </span>
 <?php
-$nbplayers = file_get_contents('140.txt');
+$nbplayers = file_get_contents('120.txt');
 
 
 if ($nbplayers == NULL){
