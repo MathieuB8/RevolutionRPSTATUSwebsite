@@ -427,28 +427,6 @@ if (file_exists('players180')){
 ?>
 </div><div class="Column"><span class="titlebig">
 <?php
-
-
-$nbplayers = file_get_contents('120.txt');
-
-if ($nbplayers == NULL){
-	sleep(1);
-	$nbplayers = file_get_contents('120.txt');
-}
-
-$time=explode("|",$nbplayers);
-if ($time != NULL and count($time) >=2){
-	$time=$time[1];
-}else{
-	$time="err";
-}
-
-$res=explode("|",$nbplayers);
-if ($res != NULL and count($res)>=3){
-	$res=$res[2];
-}else{
-	$res="err";
-}
 echo "Server 1 (30120)<br>";
 ?>
 </span>
@@ -458,7 +436,7 @@ $nbplayers = file_get_contents('120.txt');
 
 if ($nbplayers == NULL){
 	sleep(1);
-	$nbplayers = file_get_contents('140.txt');
+	$nbplayers = file_get_contents('120.txt');
 }
 
 $time=explode("|",$nbplayers);
